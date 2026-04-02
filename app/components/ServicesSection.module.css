@@ -1,0 +1,178 @@
+.servicesSection {
+  width: 100%;
+  padding: 15vh 0;
+  /* large breathing room */
+  background-color: transparent;
+  /* inherits globally to preserve grain */
+  position: relative;
+  z-index: 10;
+}
+
+.container {
+  max-width: 1300px;
+  /* Slightly constrained width to ensure text line breaks read cinematically */
+  margin: 0 auto;
+  padding: 0 5vw;
+}
+
+/* TOP ROW LAYOUT */
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15vh;
+  /* Massive spacing to separate content */
+}
+
+.leftLabel {
+  display: flex;
+  align-items: flex-start;
+  font-family: inherit;
+  font-size: clamp(14px, 1.2vw, 16px);
+  color: #EFEBE0;
+  width: 30%;
+  /* Stays pinned cleanly taking up 3/10ths */
+  font-weight: 500;
+  padding-top: 8px;
+  /* Alignment push to align top baseline with giant text logically */
+}
+
+.bullet {
+  color: #FF3500;
+  margin-right: 12px;
+  font-size: 1.25em;
+  /* Punchier visual weight */
+}
+
+.rightHead {
+  width: 70%;
+}
+
+.mainHeadline {
+  font-family: var(--font-heading);
+  font-size: clamp(32px, 4vw, 68px);
+  /* Brutalist scaling */
+  line-height: 1.05;
+  /* Super tight line-height mimicking the premium Eloqwnt reference */
+  font-weight: 500;
+  color: #EFEBE0;
+  text-transform: none;
+  /* explicitly natural case as requested */
+  max-width: 900px;
+  margin: 0;
+  letter-spacing: -0.03em;
+}
+
+/* LIST CONTAINER LAYOUT */
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.serviceRow {
+  display: flex;
+  align-items: center;
+  padding: 2.8rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  /* Barely visible gray separators mimicking Zarcerog */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  will-change: transform, opacity;
+}
+
+.serviceRow:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  /* Clean bottom cap */
+}
+
+.index {
+  width: 30%;
+  /* Aligns completely flush with the leftLabel mapping above */
+  font-family: 'Courier New', monospace;
+  /* Monospaced Zarcerog raw data style */
+  font-size: clamp(13px, 1.1vw, 15px);
+  color: #FF3500;
+  /* Brutalist Red marker style */
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.serviceName {
+  width: 65%;
+  font-family: var(--font-inter), sans-serif;
+  font-size: clamp(24px, 3vw, 48px);
+  font-weight: 400;
+  color: #EFEBE0;
+  transition: color 0.3s ease;
+  letter-spacing: -0.01em;
+}
+
+.arrowContainer {
+  width: 5%;
+  display: flex;
+  justify-content: flex-end;
+  color: #EFEBE0;
+}
+
+.arrowWrapper {
+  display: inline-flex;
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), color 0.3s ease;
+  /* Fast acceleration interaction easing */
+}
+
+.arrowIcon {
+  width: clamp(28px, 2.5vw, 40px);
+  height: clamp(28px, 2.5vw, 40px);
+}
+
+/* HOVER EFFECTS: Aggressive Red PRD Interactions */
+.serviceRow:hover .serviceName {
+  color: #FFFFFF;
+  /* Subtle brightness wash across word */
+}
+
+.serviceRow:hover .arrowWrapper {
+  transform: translateX(16px);
+  color: #FF3500;
+  /* Instant highlight of action marker per PRD rules strictly */
+}
+
+/* SMART MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+  .topRow {
+    flex-direction: column;
+    margin-bottom: 8vh;
+  }
+
+  .leftLabel {
+    width: 100%;
+    margin-bottom: 2rem;
+    padding-top: 0;
+  }
+
+  .rightHead {
+    width: 100%;
+  }
+
+  .index {
+    width: 20%;
+  }
+
+  .serviceName {
+    width: 70%;
+  }
+
+  .arrowContainer {
+    width: 10%;
+  }
+
+  .serviceRow {
+    padding: 1.8rem 0;
+  }
+
+  .flowSection {
+    height: 100vh;
+    width: 100%;
+    background: #000;
+  }
+}

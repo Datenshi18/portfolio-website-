@@ -1,0 +1,265 @@
+# 🎨 AGENCY WEBSITE DESIGN SYSTEM (RDR2-INSPIRED)
+
+---
+
+## 1. DESIGN PHILOSOPHY
+
+This design system is built on a **cinematic, high-contrast, minimal aesthetic** inspired by Red Dead Redemption 2.
+
+Core idea:
+
+* **Power through simplicity**
+* **Emotion through contrast**
+* **Attention through restraint**
+
+> Black dominates → White communicates → Red commands attention
+
+---
+
+## 2. COLOR SYSTEM
+
+### 🎯 Color Distribution Rule
+
+* **60% — Black (Base)**
+* **30% — White (Content)**
+* **10% — Red (Accent)**
+
+---
+
+### ⚫ PRIMARY COLORS (BASE)
+
+| Token          | Color   | Usage              |
+| -------------- | ------- | ------------------ |
+| `bg-primary`   | #0D0D0D | Main background    |
+| `bg-secondary` | #1A1A1A | Section separation |
+| `bg-elevated`  | #111111 | Cards / overlays   |
+
+---
+
+### ⚪ TEXT COLORS (STRUCTURE)
+
+| Token            | Color   | Usage      |
+| ---------------- | ------- | ---------- |
+| `text-primary`   | #F5F5F5 | Headings   |
+| `text-secondary` | #CFCFCF | Paragraphs |
+| `text-muted`     | #8A8A8A | Subtext    |
+
+---
+
+### 🔴 ACCENT COLORS (ACTION ONLY)
+
+| Token            | Color               | Usage               |
+| ---------------- | ------------------- | ------------------- |
+| `accent-primary` | #B31217             | CTA, key highlights |
+| `accent-hover`   | #E63946             | Hover states        |
+| `accent-subtle`  | rgba(179,18,23,0.1) | Background glow     |
+
+---
+
+## 3. COLOR USAGE RULES
+
+### ✅ DO:
+
+* Use red only for **interaction & importance**
+* Keep UI mostly black + white
+* Use contrast to guide attention
+
+### ❌ DON’T:
+
+* Don’t use red in large backgrounds
+* Don’t mix multiple accent colors
+* Don’t over-highlight text
+
+---
+
+## 4. TYPOGRAPHY SYSTEM
+
+### 🎯 Style Direction
+
+* Bold
+* Large scale
+* Minimal fonts
+* High contrast
+
+---
+
+### 🔤 FONT STACK
+
+* **Heading:** Inter / Satoshi / Helvetica Now
+* **Body:** Inter / System UI
+
+---
+
+### 🔠 TYPE SCALE
+
+| Role          | Size    | Weight  | Line Height |
+| ------------- | ------- | ------- | ----------- |
+| Hero Title    | 64–96px | 700–800 | 1.1         |
+| Section Title | 36–48px | 600–700 | 1.2         |
+| Body Text     | 16–18px | 400–500 | 1.6         |
+| Small Text    | 12–14px | 400     | 1.4         |
+
+---
+
+### ✍️ TYPOGRAPHY RULES
+
+* Use **ALL CAPS** for labels & buttons
+* Tight letter spacing for headings
+* Generous spacing for body text
+* Highlight only key words in red
+
+---
+
+## 5. LAYOUT SYSTEM
+
+### 📐 GRID
+
+* Max width: **1200–1400px**
+* Padding: **80px desktop / 24px mobile**
+
+---
+
+### 📏 SPACING SCALE
+
+| Token | Value |
+| ----- | ----- |
+| xs    | 8px   |
+| sm    | 16px  |
+| md    | 32px  |
+| lg    | 64px  |
+| xl    | 120px |
+
+---
+
+## 6. COMPONENT DESIGN
+
+---
+
+### 🔘 BUTTONS
+
+#### Primary Button
+
+* Background: `#B31217`
+* Text: `#F5F5F5`
+* Padding: `14px 28px`
+* Border-radius: `6px`
+
+#### Hover:
+
+* Background → `#E63946`
+* Scale → `1.05`
+* Transition → `0.3s ease`
+
+---
+
+### 🧾 TEXT BLOCKS
+
+* Max width: 600–700px
+* Line spacing: relaxed
+* Optional red highlight words
+
+---
+
+### 🎞️ SECTIONS
+
+| Section     | Style                   |
+| ----------- | ----------------------- |
+| Hero        | Centered, bold, minimal |
+| Scroll Text | Pinned, animated        |
+| Services    | Marquee strip           |
+| Work        | Horizontal scroll       |
+| Contact     | Clean CTA               |
+
+---
+
+## 7. MOTION DESIGN SYSTEM
+
+### 🎯 Principles
+
+* Smooth
+* Responsive to scroll
+* Not overdone
+
+---
+
+### ⚡ ANIMATION TYPES
+
+| Element  | Animation            |
+| -------- | -------------------- |
+| Hero     | Fade + upward motion |
+| Text     | Reveal on scroll     |
+| Buttons  | Scale + color shift  |
+| Sections | Parallax / pin       |
+| Work     | Horizontal scroll    |
+
+---
+
+### 🧠 RULES
+
+* Animation duration: **0.6s – 1.2s**
+* Use **ease: power3.out**
+* Avoid excessive blur & heavy effects
+
+---
+
+## 8. INTERACTION DESIGN
+
+### 🎯 Behavior
+
+* Red appears **only on interaction**
+* Hover = feedback
+* Scroll = storytelling
+
+---
+
+### 💡 MICRO-INTERACTIONS
+
+* Cursor change on hover
+* Button magnet effect (optional)
+* Subtle glow on CTA
+
+---
+
+## 9. VISUAL STYLE
+
+### 🎨 LOOK & FEEL
+
+* Dark
+* Cinematic
+* Minimal
+* High contrast
+* Aggressive but clean
+
+---
+
+### ✨ EFFECTS
+
+* Grain texture overlay (low opacity)
+* Subtle gradients (black → dark gray)
+* Sharp shadows (not soft UI)
+
+---
+
+## 10. FINAL RULE
+
+> “Restraint creates impact.”
+
+* If everything is styled → nothing stands out
+* If everything moves → nothing feels special
+* If everything is red → nothing is important
+
+---
+
+## ✅ DESIGN CHECKLIST
+
+Before finalizing:
+
+* [ ] Is the screen mostly black?
+* [ ] Is text readable and clean?
+* [ ] Is red used sparingly?
+* [ ] Is animation smooth and meaningful?
+* [ ] Does the layout feel premium?
+
+---
+
+END OF DOCUMENT

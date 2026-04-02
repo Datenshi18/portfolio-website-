@@ -1,0 +1,182 @@
+.heroSection {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 0;
+  background-color: var(--bg-color, #000000);
+}
+
+.mainTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  padding: 0;
+  max-width: 100%;
+  margin-top: -5vh;
+  position: relative;
+  z-index: 10;
+  gap: 3.5rem;
+}
+
+.heroHeadline {
+  font-size: 12vw;
+}
+
+.heroSubtext {
+  font-size: 15vw;
+}
+
+.heroHeadline,
+.heroSubtext {
+  line-height: 0.82;
+  font-family: var(--font-bebas-neue), var(--font-heading);
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+  letter-spacing: -0.04em;
+  font-weight: normal;
+  will-change: transform;
+  transition: color 0.3s ease;
+}
+
+/* DEFAULT COLORS */
+.heroHeadline {
+  color: #EFEBE0;
+  transition: color 0.3s ease;
+}
+
+.heroSubtext {
+  color: #FF3500;
+  transition: color 0.3s ease;
+}
+
+/* HOVER: when hovering subtext → headline turns red */
+.mainTextContainer:has(.heroSubtext:hover) .heroHeadline {
+  color: #FF3500;
+}
+
+/* HOVER: when hovering headline → subtext turns white */
+.mainTextContainer:has(.heroHeadline:hover) .heroSubtext {
+  color: #EFEBE0;
+}
+
+/* Cap the font size on massive ultrawide monitors */
+@media (min-width: 1800px) {
+
+  .heroHeadline,
+  .heroSubtext {
+    font-size: 180px;
+  }
+}
+
+/* Corner elements representing the brutalist UI style */
+.cornerTopLeft,
+.cornerTopRight {
+  position: absolute;
+  top: 40px;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  font-family: monospace;
+  text-transform: uppercase;
+  z-index: 5;
+}
+
+.cornerTopLeft {
+  left: 40px;
+  color: #FF3500;
+}
+
+.cornerTopRight {
+  right: 40px;
+  color: #8A8A8A;
+}
+
+/* Bottom Area matching the image exactly */
+.bottomAreaContainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 40px 40px 40px;
+}
+
+.redLine {
+  height: 1px;
+  width: 100%;
+  background-color: #FF3500;
+  margin-bottom: 24px;
+}
+
+.bottomContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.cornerBottomLeft {
+  color: #8A8A8A;
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  font-family: monospace;
+}
+
+.cornerBottomRight {
+  text-align: right;
+  font-family: monospace;
+  font-size: 11px;
+  line-height: 1.8;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.creativeTitle {
+  color: #8A8A8A;
+}
+
+.scrollText {
+  color: #FF3500;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .mainTextContainer {
+    padding: 0 20px;
+  }
+
+  .heroHeadline,
+  .heroSubtext {
+    font-size: 9.5vw;
+  }
+
+  .cornerTopLeft,
+  .cornerTopRight {
+    top: 24px;
+    font-size: 9px;
+  }
+
+  .cornerTopLeft {
+    left: 20px;
+  }
+
+  .cornerTopRight {
+    right: 20px;
+  }
+
+  .bottomAreaContainer {
+    padding: 0 20px 24px 20px;
+  }
+
+  .cornerBottomLeft {
+    font-size: 9px;
+  }
+
+  .cornerBottomRight {
+    font-size: 9px;
+  }
+}

@@ -1,0 +1,80 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.darkLayer {
+  position: absolute;
+  inset: 0;
+  background: #0a0a0a;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.darkImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* Make image vivid/bright while keeping transition contrast */
+  filter: brightness(1.25) contrast(1.05) saturate(1.15);
+  transform: scale(1.02);
+  z-index: 0;
+}
+
+.lightLayer {
+  position: absolute;
+  inset: 0;
+
+  /* 🔥 MATCHES YOUR SHOWCASE DARK + RED SYSTEM */
+  background: linear-gradient(180deg,
+      #1a0000 0%,
+      #0d0d0d 50%,
+      #000000 100%),
+    radial-gradient(circle at 50% 30%,
+      rgba(179, 18, 23, 0.15),
+      transparent 60%);
+
+  color: #f4e4c1;
+  /* warm western tone */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 4rem;
+  letter-spacing: -0.02em;
+
+  z-index: 2;
+
+  will-change: clip-path;
+
+  /* 🔥 CINEMATIC DEPTH */
+  text-shadow:
+    0 2px 10px rgba(0, 0, 0, 0.9),
+    0 0 40px rgba(179, 18, 23, 0.2);
+
+  /* 🔥 VIGNETTE (matches cards) */
+  box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.95);
+}
+
+/* ── Mobile ── */
+@media (max-width: 768px) {
+  .lightLayer {
+    font-size: 2.5rem;
+  }
+
+  .darkLayer {
+    font-size: 2.5rem;
+  }
+}

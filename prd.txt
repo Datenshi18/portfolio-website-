@@ -1,0 +1,345 @@
+# 🚀 PRODUCT REQUIREMENTS DOCUMENT (PRD)
+
+## Agency Website (Conversion-Focused, Animation-Driven)
+
+---
+
+## 1. PRODUCT OVERVIEW
+
+### 🎯 Goal
+
+Build a **high-converting agency website** that:
+
+* Showcases design & development capability
+* Creates a strong first impression
+* Converts visitors into **project inquiries**
+
+---
+
+## 2. CORE OBJECTIVE
+
+> Turn visitors into clients through clear messaging, strong visuals, and a frictionless contact flow.
+
+---
+
+## 3. TARGET USERS
+
+### 👤 Primary Users
+
+* Business owners
+* Startup founders
+* Creators needing websites
+
+### 🧠 User Intent
+
+* “I need a website”
+* “I want something better than basic templates”
+* “I want a professional team”
+
+---
+
+## 4. WEBSITE STRUCTURE (PAGES & SECTIONS)
+
+> Single-page scroll website
+
+---
+
+### 🧩 PAGE: Home (`/`)
+
+---
+
+## 🔥 SECTION 1: HERO
+
+### Purpose:
+
+* Grab attention instantly
+* Communicate value
+
+### Content:
+
+* Headline
+* Subtext
+* Primary CTA
+
+### CTA:
+
+* **Primary:** Start a Project
+* **Secondary (optional):** View Our Work
+
+---
+
+## ✍️ SECTION 2: SCROLL TEXT (PINNED)
+
+### Purpose:
+
+* Emotional storytelling
+* Differentiate from competitors
+
+### Content:
+
+> Build something that means something. Not just something that works.
+
+### Behavior:
+
+* Word-by-word reveal on scroll
+* Section pinned during animation
+
+### CTA:
+
+* None (focus = message)
+
+---
+
+## 🎯 SECTION 3: SERVICES (MARQUEE)
+
+### Purpose:
+
+* Show capabilities quickly
+
+### Content:
+
+* Web Design
+* Web Development
+* UI/UX Systems
+* Performance Optimization
+* Branding (optional)
+
+### CTA:
+
+* **Explore Services**
+
+---
+
+## 🎥 SECTION 4: WORK (HORIZONTAL SCROLL)
+
+### Purpose:
+
+* Build trust through past work
+
+### Content:
+
+* Featured projects (3–5)
+* Title + short description
+
+### CTA:
+
+* **View Project**
+* **See More Work**
+
+---
+
+## 📞 SECTION 5: CONTACT / CTA
+
+### Purpose:
+
+* Convert user into lead
+
+### Content:
+
+* Headline
+* Short supporting text
+* Form
+
+### Headline:
+
+> Let’s build something that stands out.
+
+### CTA:
+
+* **Start Your Project**
+* **Send Inquiry**
+
+---
+
+## 5. CONTACT FORM REQUIREMENTS
+
+### Fields:
+
+* Name (required)
+* Email (required)
+* Project Type (dropdown)
+* Budget (dropdown)
+* Description (textarea)
+
+### Behavior:
+
+* Validation required
+* Success message after submission
+
+---
+
+## 6. FUNCTIONAL REQUIREMENTS
+
+### Must Have:
+
+* Smooth scrolling
+* Responsive design
+* Fast loading
+* Working contact form (connected to backend)
+
+### Should Have:
+
+* Scroll-triggered animations
+* Hover interactions (red accent system)
+
+---
+
+## 7. DESIGN REQUIREMENTS
+
+### 🎨 Color System
+
+* Black (primary)
+* White (content)
+* Red (hover & interaction only)
+
+### Rules:
+
+* Default UI = black & white
+* Red appears only on hover / interaction
+
+---
+
+### 🔤 Typography
+
+* Bold headings
+* Clean sans-serif font
+* Large scale for hero & sections
+
+---
+
+## 8. ANIMATION REQUIREMENTS
+
+### Tools:
+
+* GSAP + ScrollTrigger
+* Lenis (smooth scroll)
+
+### Key Animations:
+
+* Hero fade-in
+* Text reveal (pinned section)
+* Marquee scroll
+* Horizontal work scroll
+
+---
+
+## 9. USER FLOW
+
+### Primary Flow:
+
+Landing → Scroll → Understand → Click CTA → Fill Form → Submit
+
+---
+
+## 10. FILE STRUCTURE (IMPORTANT)
+
+> All file and folder names must be **clear, readable, and descriptive**
+
+### ✅ Rules:
+
+* Use full words (no abbreviations)
+* Use meaningful names
+* Keep structure organized
+
+---
+
+### 📁 Example Structure:
+
+```
+/app
+  /components
+    HeroSection.jsx
+    ScrollTextSection.jsx
+    ServicesMarquee.jsx
+    WorkHorizontalScroll.jsx
+    ContactSection.jsx
+
+  /styles
+    globalStyles.css
+
+  page.jsx
+```
+
+---
+
+### ❌ Avoid:
+
+* `comp1.jsx`
+* `sectionA.jsx`
+* `temp.js`
+
+---
+
+### ✅ Use:
+
+* `HeroSection.jsx`
+* `ContactForm.jsx`
+* `ProjectShowcase.jsx`
+
+---
+
+## 11. COPY (USE AS BASE — EDIT LATER)
+
+---
+
+### HERO
+
+**Headline:**
+We don’t just build websites. We build digital experiences.
+
+**Subtext:**
+High-performance, visually stunning websites designed to convert.
+
+---
+
+### SCROLL TEXT
+
+Build something that means something. Not just something that works.
+
+---
+
+### SERVICES
+
+What We Do
+
+---
+
+### WORK
+
+Selected Work
+Crafted for impact. Built for results.
+
+---
+
+### CONTACT
+
+Let’s build something that stands out.
+
+---
+
+## 12. SUCCESS METRICS
+
+* Number of form submissions
+* CTA click rate
+* Time spent on page
+* Scroll completion rate
+
+---
+
+## 13. NON-GOALS (FOR NOW)
+
+* No user accounts
+* No complex dashboards
+* No unnecessary pages
+
+---
+
+## 14. FINAL PRINCIPLE
+
+> Clarity > Complexity
+> Conversion > Animation
+> Execution > Perfection
+
+---
+
+END OF PRD

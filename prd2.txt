@@ -1,0 +1,112 @@
+PROJECT: Premium Portfolio Website (Balanced Motion System)
+
+CORE IDEA:
+Homepage = cinematic storytelling
+Inner pages = fast, clean, minimal motion
+
+---
+
+GLOBAL MOTION RULE:
+
+DO NOT over-animate inner pages.
+
+Use only:
+- Fade in
+- Subtle translateY (10–20px max)
+- Hover micro-interactions
+
+Avoid:
+- Large scroll hijacking
+- Heavy GSAP timelines
+- Complex parallax
+- Horizontal scroll sections
+
+---
+
+PAGE TRANSITIONS:
+
+- Duration: 0.4–0.6s
+- Effect:
+  opacity: 0 → 1
+  transform: translateY(20px → 0)
+
+- No dramatic transitions
+- Must feel instant but smooth
+
+---
+
+SCROLL REVEALS:
+
+Apply ONLY to:
+- Section headings
+- Cards
+- Images
+
+Animation:
+- opacity: 0 → 1
+- translateY: 20px → 0
+- stagger: 0.08
+
+Trigger:
+- Once (no repeat)
+
+---
+
+HOVER INTERACTIONS:
+
+Cards:
+- scale: 1 → 1.02
+- border glow (accent color)
+
+Buttons:
+- background fill (left → right OR simple fade)
+- slight lift (translateY: -2px)
+
+Links:
+- underline slide animation
+
+---
+
+PER PAGE BEHAVIOR:
+
+/work:
+- Grid layout
+- Hover → slight zoom + glow
+- No scroll tricks
+
+/work/[slug]:
+- Clean reading experience
+- Images fade in
+- Text appears smoothly
+- No distractions
+
+/about:
+- Static sections
+- Small reveal animations only
+
+/services:
+- Card hover interaction
+- No motion on scroll except fade
+
+/process:
+- Simple vertical timeline
+- Line grows subtly on scroll (optional, very light)
+
+/contact:
+- Input focus animations
+- Button hover only
+
+---
+
+PERFORMANCE PRIORITY:
+
+- Must feel instant
+- No lag on scroll
+- 60fps always
+
+---
+
+FINAL RULE:
+
+If animation draws attention → REMOVE IT  
+If animation supports clarity → KEEP IT

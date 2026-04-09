@@ -1,0 +1,74 @@
+/* ═══════════════════════════════════════════════════════════
+   MOTION SYSTEM — PRD2 / Design2 Tokens & Utilities
+   Imported by inner pages only. Homepage is untouched.
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  /* Motion Tokens */
+  --motion-fast: 0.2s;
+  --motion-normal: 0.4s;
+  --motion-slow: 0.6s;
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Hover Tokens */
+  --hover-scale: 1.02;
+  --hover-lift: -2px;
+  --hover-glow: 0 0 20px rgba(179, 18, 23, 0.2);
+  --hover-glow-strong: 0 0 30px rgba(179, 18, 23, 0.3);
+}
+
+/* ── Scroll Fade-Up Utility ── */
+.fade-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--motion-slow) var(--ease-premium),
+              transform var(--motion-slow) var(--ease-premium);
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Link Underline Slide ── */
+.link-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.link-underline::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--accent-primary, #B31217);
+  transition: width var(--motion-normal) var(--ease-premium);
+}
+
+.link-underline:hover::after {
+  width: 100%;
+}
+
+/* ── Page Enter Animation ── */
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Stagger delays (for grouped reveals) ── */
+.stagger-1 { transition-delay: 0.08s; }
+.stagger-2 { transition-delay: 0.16s; }
+.stagger-3 { transition-delay: 0.24s; }
+.stagger-4 { transition-delay: 0.32s; }
+.stagger-5 { transition-delay: 0.40s; }
+.stagger-6 { transition-delay: 0.48s; }
+.stagger-7 { transition-delay: 0.56s; }
+.stagger-8 { transition-delay: 0.64s; }

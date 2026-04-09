@@ -1,0 +1,210 @@
+/* ═══════════════════════════════════════════════════
+   ABOUT PAGE — Static + Small Reveal Animations
+   ═══════════════════════════════════════════════════ */
+
+.aboutSection {
+  min-height: 100vh;
+  padding: 160px 0 80px;
+}
+
+/* ── Hero ── */
+.hero {
+  text-align: center;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.label {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #B31217;
+}
+
+.headline {
+  font-family: var(--font-bebas-neue, 'Bebas Neue', sans-serif);
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  color: #F5F5F5;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  max-width: 900px;
+}
+
+.accent { color: #B31217; }
+
+.subtext {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 1.05rem;
+  color: #8A8A8A;
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+/* ── Stats ── */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 100px;
+  padding: 48px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.stat {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.statNumber {
+  font-family: var(--font-bebas-neue, 'Bebas Neue', sans-serif);
+  font-size: 3.5rem;
+  color: #F5F5F5;
+  line-height: 1;
+}
+
+.statLabel {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #8A8A8A;
+}
+
+/* ── Values ── */
+.valuesSection {
+  margin-bottom: 100px;
+}
+
+.sectionTitle {
+  font-family: var(--font-bebas-neue, 'Bebas Neue', sans-serif);
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: #F5F5F5;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  letter-spacing: -0.01em;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.valueCard {
+  padding: 36px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.valueCard:hover {
+  transform: scale(1.02);
+  border-color: rgba(179, 18, 23, 0.3);
+  box-shadow: 0 0 20px rgba(179, 18, 23, 0.15);
+}
+
+.valueNum {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: #B31217;
+  letter-spacing: 0.1em;
+}
+
+.valueTitle {
+  font-family: var(--font-bebas-neue, 'Bebas Neue', sans-serif);
+  font-size: 1.5rem;
+  color: #F5F5F5;
+  text-transform: uppercase;
+}
+
+.valueDesc {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 0.9rem;
+  color: #8A8A8A;
+  line-height: 1.6;
+}
+
+/* ── Team ── */
+.teamSection {
+  margin-bottom: 60px;
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.teamCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 32px 16px;
+  text-align: center;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.teamCard:hover {
+  transform: translateY(-4px);
+}
+
+.teamAvatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #B31217, #8B0000);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.avatarInitial {
+  font-family: var(--font-bebas-neue, 'Bebas Neue', sans-serif);
+  font-size: 1.5rem;
+  color: #F5F5F5;
+  letter-spacing: 0.05em;
+}
+
+.teamName {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 1rem;
+  font-weight: 600;
+  color: #F5F5F5;
+  text-transform: none;
+}
+
+.teamRole {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 0.8rem;
+  color: #8A8A8A;
+  letter-spacing: 0.05em;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .valuesGrid { grid-template-columns: 1fr; }
+  .teamGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  .aboutSection { padding: 120px 0 60px; }
+  .hero { margin-bottom: 48px; }
+  .stats { margin-bottom: 60px; }
+}

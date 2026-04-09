@@ -1,0 +1,313 @@
+/* ═══════════════════════════════════════════════════
+   CONTACT PAGE — Input Focus + Button Hover Only
+   ═══════════════════════════════════════════════════ */
+
+.contactPage {
+  min-height: 100vh;
+  padding: 160px 0 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Header ── */
+.header {
+  text-align: center;
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.label {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #B31217;
+}
+
+.headline {
+  font-family: var(--font-bebas-neue, 'Bebas Neue', sans-serif);
+  font-size: clamp(2.8rem, 6vw, 5.5rem);
+  color: #F5F5F5;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+.accent { color: #B31217; }
+
+.subtext {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 1.1rem;
+  color: #8A8A8A;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+/* ── Form ── */
+.form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 80px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.formGroupFull {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  grid-column: 1 / -1;
+}
+
+.formLabel {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #8A8A8A;
+  transition: color 0.3s ease;
+}
+
+.formGroup:focus-within .formLabel,
+.formGroupFull:focus-within .formLabel {
+  color: #B31217;
+}
+
+.formInput,
+.formSelect,
+.formTextarea {
+  width: 100%;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  color: #F5F5F5;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+}
+
+.formInput::placeholder,
+.formTextarea::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+.formInput:focus,
+.formSelect:focus,
+.formTextarea:focus {
+  border-color: rgba(179, 18, 23, 0.6);
+  background: rgba(179, 18, 23, 0.04);
+  box-shadow: 0 0 0 3px rgba(179, 18, 23, 0.08);
+}
+
+.formSelect {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%238A8A8A' stroke-width='1.5'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  cursor: pointer;
+}
+
+.formSelect option {
+  background: #111111;
+  color: #F5F5F5;
+}
+
+.formTextarea {
+  min-height: 140px;
+  resize: vertical;
+  line-height: 1.6;
+}
+
+.inputError {
+  border-color: #B31217 !important;
+  box-shadow: 0 0 0 3px rgba(179, 18, 23, 0.12) !important;
+}
+
+.errorText {
+  font-size: 0.75rem;
+  color: #E63946;
+  letter-spacing: 0.05em;
+  margin-top: -4px;
+}
+
+/* ── Submit ── */
+.submitWrapper {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.submitButton {
+  position: relative;
+  padding: 18px 52px;
+  background: #B31217;
+  color: #F5F5F5;
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.submitButton:hover {
+  background: #E63946;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(179, 18, 23, 0.3),
+              0 0 60px rgba(179, 18, 23, 0.1);
+}
+
+.submitButton:active {
+  transform: scale(0.98);
+}
+
+.submitButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Shine sweep */
+.submitButton::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+  transition: left 0.5s ease;
+}
+
+.submitButton:hover::after {
+  left: 120%;
+}
+
+/* ── Success ── */
+.successState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 80px 0;
+  margin-bottom: 80px;
+}
+
+.successIcon {
+  width: 64px;
+  height: 64px;
+  border: 3px solid #B31217;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #B31217;
+  font-size: 1.8rem;
+}
+
+.successTitle {
+  font-family: var(--font-bebas-neue, 'Bebas Neue', sans-serif);
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  color: #F5F5F5;
+  text-transform: uppercase;
+}
+
+.successSubtext {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 1rem;
+  color: #8A8A8A;
+  text-align: center;
+  max-width: 400px;
+  line-height: 1.6;
+}
+
+/* ── Info Grid ── */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+.infoCard {
+  padding: 28px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.infoCard:hover {
+  border-color: rgba(179, 18, 23, 0.2);
+  box-shadow: 0 0 15px rgba(179, 18, 23, 0.08);
+}
+
+.infoLabel {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #B31217;
+}
+
+.infoValue {
+  font-family: var(--font-inter, 'Inter', sans-serif);
+  font-size: 0.95rem;
+  color: #CFCFCF;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .contactPage { padding: 120px 0 60px; }
+
+  .form {
+    grid-template-columns: 1fr;
+  }
+
+  .formGroupFull,
+  .submitWrapper {
+    grid-column: 1;
+  }
+
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .submitButton {
+    width: 100%;
+    padding: 16px 32px;
+  }
+}

@@ -12,27 +12,27 @@ if (typeof window !== "undefined") {
 const projects = [
   {
     num: "01",
-    title: "The Van Der Linde Agency",
-    description: "A premium B2B branding experience that captures the essence of frontier digital design.",
-    bg: "/images/work1.png"
+    title: "Restaurant website",
+    description: "A visually rich dining experience showcasing menus, ambiance, and seamless table reservations.",
+    bg: "/images/restaurentwebsite.webp"
   },
   {
     num: "02",
-    title: "Outlaw Systems",
-    description: "High-performance architecture built for those who break the rules of conventional UI.",
-    bg: "/images/work2.png"
+    title: "Gym Website",
+    description: "A high-energy fitness platform designed to highlight workouts, trainers, and membership plans.",
+    bg: "/images/gymimage.webp"
   },
   {
     num: "03",
-    title: "Frontier Digital",
-    description: "Modern e-commerce solutions with a rugged, cinematic aesthetic.",
-    bg: "/images/work3.png"
+    title: "Salon website",
+    description: "An elegant beauty service website featuring styling options, bookings, and client transformations.",
+    bg: "/images/salonwebsite.webp"
   },
   {
     num: "04",
-    title: "Redemption II",
-    description: "A comprehensive design system that balances grit with absolute precision.",
-    bg: "/images/work4.png"
+    title: "This Portfolio",
+    description: "A personal portfolio crafted to present creative work, skills, and projects with modern aesthetics.",
+    bg: "/images/portfolio.webp"
   }
 ];
 

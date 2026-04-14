@@ -36,7 +36,7 @@ export default function Navbar() {
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''}`}>
       <div className={styles.inner}>
         <Link href="/" className={styles.logo}>
-          AGENCY<span className={styles.logoDot}>.</span>
+          DIGITAL LIFT<span className={styles.logoDot}>.</span>
         </Link>
 
         {/* Desktop Nav */}

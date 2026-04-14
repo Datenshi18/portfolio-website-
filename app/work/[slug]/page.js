@@ -97,10 +97,10 @@ export function generateStaticParams() {
 export function generateMetadata({ params }) {
   const project = projectData[params.slug];
   if (!project) {
-    return { title: 'Project Not Found | Agency.' };
+    return { title: 'Project Not Found | Digital Lift' };
   }
   return {
-    title: `${project.title} | Agency. — Case Study`,
+    title: `${project.title} | Digital Lift — Case Study`,
     description: project.overview,
   };
 }

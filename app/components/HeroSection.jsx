@@ -88,7 +88,7 @@ export default function HeroSection() {
       <section className={`${styles.heroSection} hero-section`} ref={containerRef}>
         {/* Corner UI Elements */}
         <div className={styles.cornerTopLeft} ref={el => cornerRefs.current[0] = el}>
-          AGENCY.COM
+          DIGITALLIFT.COM
         </div>
         <div className={styles.cornerTopRight} ref={el => cornerRefs.current[1] = el}>
           VOL. 1 / 2026
@@ -97,7 +97,7 @@ export default function HeroSection() {
         {/* Main Massive Typography Container */}
         <div className={styles.mainTextContainer}>
           <h1 className={`${styles.heroHeadline} hero-headline`}>
-            <span ref={headlineInnerRef} style={{ display: 'inline-block' }}>COMPANY NAME</span>
+            <span ref={headlineInnerRef} style={{ display: 'inline-block' }}>DIGITAL LIFT</span>
           </h1>
           <h1 className={`${styles.heroSubtext} hero-subtext`}>
             <span ref={subtextInnerRef} style={{ display: 'inline-block' }}>BUILD WITH US</span>
@@ -112,7 +112,7 @@ export default function HeroSection() {
               P. 001
             </div>
             <div className={styles.cornerBottomRight} ref={el => cornerRefs.current[3] = el}>
-              <span className={styles.creativeTitle}>/ DIGITAL AGENCY</span>
+              <span className={styles.creativeTitle}>/ DIGITAL LIFT</span>
               <br />
               <span className={styles.scrollText}>↓ SCROLL TO TUNE IN</span>
             </div>

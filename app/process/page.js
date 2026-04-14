@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import ProcessContent from './ProcessContent';
 
 export const metadata = {
-  title: 'Process | Agency. — How We Work',
+  title: 'Process | Digital Lift — How We Work',
   description: 'Our proven process takes projects from vision to reality. Discovery, strategy, design, develop, launch, and optimize.',
 };
 

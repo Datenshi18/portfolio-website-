@@ -25,7 +25,7 @@ export default function Footer() {
         {/* Left — Brand */}
         <div className={styles.brand}>
           <Link href="/" className={styles.logo}>
-            AGENCY<span className={styles.logoDot}>.</span>
+            DIGITAL LIFT<span className={styles.logoDot}>.</span>
           </Link>
           <p className={styles.tagline}>
             Cinematic digital experiences that convert.
@@ -62,7 +62,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className={styles.bottomBar}>
         <span className={styles.copyright}>
-          © {new Date().getFullYear()} Agency. All rights reserved.
+          © {new Date().getFullYear()} Digital Lift. All rights reserved.
         </span>
         <span className={styles.credit}>
           Designed & Developed with precision.

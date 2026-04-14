@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import ServicesContent from './ServicesContent';
 
 export const metadata = {
-  title: 'Services | Agency. — What We Do',
+  title: 'Services | Digital Lift — What We Do',
   description: 'From web design to full-stack development, branding, and performance optimization — everything your brand needs to dominate digital.',
 };
 

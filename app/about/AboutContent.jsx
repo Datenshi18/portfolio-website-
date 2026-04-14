@@ -45,7 +45,7 @@ export default function AboutContent() {
           feel like cinema.
         </h1>
         <p className={`${styles.subtext} fade-up`}>
-          Agency. is a collective of designers, developers, and strategists who
+          Digital Lift is a collective of designers, developers, and strategists who
           believe the web deserves better. We craft premium digital experiences
           with obsessive attention to craft and clarity.
         </p>

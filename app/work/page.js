@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import WorkGrid from './WorkGrid';
 
 export const metadata = {
-  title: 'Work | Agency. — Selected Projects',
+  title: 'Work | Digital Lift — Selected Projects',
   description: 'Explore our portfolio of premium digital experiences. Each project is crafted with cinematic precision and strategic intent.',
 };
 

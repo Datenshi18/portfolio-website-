@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const bebasNeue = Bebas_Neue({ subsets: ['latin'], weight: '400', variable: '--font-bebas-neue' })
 
 export const metadata = {
-  title: 'Agency. | Cinematic Digital Experiences',
+  title: 'Digital Lift | Cinematic Digital Experiences',
   description: 'High-performance, visually stunning websites designed to convert. Build something that means something.',
 }
 

@@ -252,7 +252,7 @@
 /* ── Info Grid ── */
 .infoGrid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
   width: 100%;
 }
@@ -285,11 +285,41 @@
 
 .infoValue {
   font-family: var(--font-inter, 'Inter', sans-serif);
+  word-break: break-word;
   font-size: 0.95rem;
   color: #CFCFCF;
 }
 
+/* ── WhatsApp Card ── */
+.whatsappCard {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.whatsappCard:hover {
+  border-color: rgba(37, 211, 102, 0.35);
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.12);
+}
+
+.whatsappCard:hover .infoLabel {
+  color: #25D366;
+}
+
+.whatsappIcon {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
 /* ── Responsive ── */
+@media (max-width: 1024px) {
+  .infoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 768px) {
   .contactPage { padding: 120px 0 60px; }
 

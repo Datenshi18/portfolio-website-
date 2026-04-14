@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import ContactPageContent from './ContactPageContent';
 
 export const metadata = {
-  title: 'Contact | Agency. — Start Your Project',
+  title: 'Contact | Digital Lift — Start Your Project',
   description: 'Ready to build something extraordinary? Tell us about your project and we\'ll craft a solution that exceeds expectations.',
 };
 
